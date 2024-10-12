@@ -1,22 +1,22 @@
 
 
-# 🧊 Nibiru Chain
+**🧊 Nibiru Chain**
 
 website: [https://nibiru.fi/](https://nibiru.fi/)\
 x: [https://twitter.com/NibiruChain](https://twitter.com/NibiruChain)\
 discord: [https://discord.com/invite/nibirufi](https://discord.com/invite/nibirufi)\
 link tr.ee: [https://linktr.ee/nibiruchain](https://linktr.ee/nibiruchain)\
-\
 
 
-## **Building from source**
+
+**Building from source**
 
 ```
 sudo apt update
 sudo apt install -y curl git jq lz4 build-essential
 ```
 
-## **Install go**
+**Install go**
 
 ```
 sudo rm -rf /usr/local/go
@@ -25,7 +25,7 @@ echo 'export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin' >> $HOME/.bash_profile
 source .bash_profile
 ```
 
-## **Clone project repository**
+**Clone project repository**
 
 ```
 git clone https://github.com/NibiruChain/nibiru.git
