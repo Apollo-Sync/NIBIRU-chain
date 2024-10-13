@@ -34,7 +34,7 @@ git checkout v1.0.2
 make install
 ```
 
-## **Node configuration**
+**Node configuration**
 
 ```
 nibid init Moniker --chain-id=cataclysm-1
