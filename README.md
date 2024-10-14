@@ -44,7 +44,7 @@ wget -O $HOME/.nibid/config/addrbook.json "https://raw.githubusercontent.com/Apo
 
 ```
 
-## **Set prunning**
+**Set prunning**
 
 ```
 pruning="custom" && \
@@ -57,8 +57,7 @@ sed -i -e "s/^pruning-keep-every *=.*/pruning-keep-every = \"$pruning_keep_every
 sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" $HOME/.nibid/config/app.toml
 ```
 
-## **Create a service**
-
+**Create a service**
 ```
 sudo tee /etc/systemd/system/nibid.service > /dev/null <<EOF
 [Unit]
@@ -78,7 +77,6 @@ sudo systemctl enable nibid
 
 SNAP_NAME=$(curl -s https://ss.nibiru.nodestake.org/ | egrep -o ">20.*\.tar.lz4" | tr -d ">")
 curl -o - -L https://ss.nibiru.nodestake.org/${SNAP_NAME}  | lz4 -c -d - | tar -x -C $HOME/.nibid
-
 ```
 
 ## **Start the service & check logs**
