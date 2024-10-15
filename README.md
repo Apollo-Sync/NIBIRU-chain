@@ -2,10 +2,10 @@
 
 **🧊 Nibiru Chain**
 
-website: [https://nibiru.fi/](https://nibiru.fi/)\
-x: [https://twitter.com/NibiruChain](https://twitter.com/NibiruChain)\
-discord: [https://discord.com/invite/nibirufi](https://discord.com/invite/nibirufi)\
-link tr.ee: [https://linktr.ee/nibiruchain](https://linktr.ee/nibiruchain)\
+website: https://nibiru.fi/
+x: https://twitter.com/NibiruChain
+discord: https://discord.com/invite/nibirufi
+link tr.ee: https://linktr.ee/nibiruchain
 
 
 
@@ -79,8 +79,7 @@ SNAP_NAME=$(curl -s https://ss.nibiru.nodestake.org/ | egrep -o ">20.*\.tar.lz4"
 curl -o - -L https://ss.nibiru.nodestake.org/${SNAP_NAME}  | lz4 -c -d - | tar -x -C $HOME/.nibid
 ```
 
-## **Start the service & check logs**
-
+**Start the service & check logs**
 ```
 sudo systemctl restart nibid && journalctl -u nibid -f -o cat | grep height
 ```
