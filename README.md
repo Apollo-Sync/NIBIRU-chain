@@ -1,6 +1,6 @@
 
 
-**🧊 Nibiru Chain**
+#🧊 Nibiru Chain
 
 website: https://nibiru.fi/
 x: https://twitter.com/NibiruChain
