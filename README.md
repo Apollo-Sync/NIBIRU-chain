@@ -72,9 +72,11 @@ LimitNOFILE=65535
 [Install]
 WantedBy=multi-user.target
 EOF
+```
+```
 sudo systemctl daemon-reload
 sudo systemctl enable nibid
-
+```
 SNAP_NAME=$(curl -s https://ss.nibiru.nodestake.org/ | egrep -o ">20.*\.tar.lz4" | tr -d ">")
 curl -o - -L https://ss.nibiru.nodestake.org/${SNAP_NAME}  | lz4 -c -d - | tar -x -C $HOME/.nibid
 ```
